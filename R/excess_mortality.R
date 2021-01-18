@@ -50,7 +50,7 @@ total.xs.mortality.net <- total.xs.mortality %>%
 ggplot(total.xs.mortality.net, aes(x = State, color = Gender)) +
   geom_errorbar(aes(ymin = lwr, ymax = upr)) +
   geom_point(aes(y = fit)) +
-  labs(title = 'Excess Mortality attributed to the Direct and Indirect Effects of COVID-19 in the USA', y = '# of Deaths', x = 'State') +
+  labs(title = 'Excess Mortality attributed to the Overall Effects of COVID-19 in the USA', y = '# of Deaths', x = 'State') +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 270, vjust = 0.5),
         legend.title = element_blank())

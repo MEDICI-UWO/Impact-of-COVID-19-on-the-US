@@ -113,5 +113,5 @@ LE.diff.USA <- merge(LE.diff.USA, LE.diff.USA.net, by = c('State', 'Gender', 'Ag
 ggplot(LE.diff.USA, aes(x = Gender, y = fit, fill = Effect)) +
   geom_bar(stat = 'identity') +
   geom_errorbar(aes(ymin = lwr, ymax = upr), width = 0.2,) +
-  labs(title = 'Decrease in Life Expectancy at Birth due to Direct vs Indirect Effects of COVID-19 \nin the USA in 2020', y = 'Decrease in Life Expectancy (years)', x = 'States') +
+  labs(title = 'Decrease in Life Expectancy at Birth due to Direct vs Indirect Effects of COVID-19 \nin the USA in 2020', y = 'Decrease in Life Expectancy (years)', x = 'Sex') +
   theme_minimal()
