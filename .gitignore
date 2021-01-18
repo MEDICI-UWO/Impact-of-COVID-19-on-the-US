@@ -1,0 +1,6 @@
+*.Rproj
+.Rhistory
+.Rproj.user/
+*.DS_Store
+Tables/
+R/reformat_data_for_manuscript.R
