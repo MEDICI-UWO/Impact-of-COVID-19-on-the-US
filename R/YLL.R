@@ -129,7 +129,7 @@ USA.YLLs.female$Age.Cohort <- factor(USA.YLLs.female$Age.Cohort, levels = age.co
 ggplot(USA.YLLs.female, aes(x = Age.Cohort, group = Effect)) +
   geom_bar(aes(y = fit, fill = Effect), stat = 'identity', position = position_dodge()) +
   geom_errorbar(aes(ymax = upr, ymin = lwr), width = 0.2, position = position_dodge(.9)) +
-  labs(title = 'YLLs due to Direct and Indirect Effects of COVID-19 in the USA (Female Population)', y = 'YLLs (Person years)', x = 'Age Group') +
+  labs(title = 'YLLs due to Direct vs Indirect Effects of COVID-19 in the USA (Female Population)', y = 'YLLs (Person years)', x = 'Age Group') +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 270, vjust = 0.5))
 
@@ -141,6 +141,6 @@ USA.YLLs.male$Age.Cohort <- factor(USA.YLLs.male$Age.Cohort, levels = age.cohort
 ggplot(USA.YLLs.male, aes(x = Age.Cohort, group = Effect)) +
   geom_bar(aes(y = fit, fill = Effect), stat = 'identity', position = position_dodge()) +
   geom_errorbar(aes(ymax = upr, ymin = lwr), width = 0.2, position = position_dodge(.9)) +
-  labs(title = 'YLLs due to Direct and Indirect Effects of COVID-19 in the USA (Male Population)', y = 'YLLs (Person years)', x = 'Age Group') +
+  labs(title = 'YLLs due to Direct vs Indirect Effects of COVID-19 in the USA (Male Population)', y = 'YLLs (Person years)', x = 'Age Group') +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 270, vjust = 0.5))

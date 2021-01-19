@@ -4,3 +4,7 @@
 *.DS_Store
 Tables/
 R/reformat_data_for_manuscript.R
+Data/usa_jan_deaths.csv
+Data/VSRR_-_State_and_National_Provisional_Counts_for_Live_Births__Deaths__and_Infant_Deaths.csv
+Data/Provisional_Deaths_filled.csv
+Data/Deaths per State (filled).csv
